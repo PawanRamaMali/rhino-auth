@@ -1,5 +1,5 @@
-box::use(
-  shiny[bootstrapPage, div, moduleServer, NS, renderUI, tags, uiOutput],
+box::use(,
+  shiny[bootstrapPage, div, moduleServer, NS, renderUI, tags, uiOutput, tagList,],
   shiny.blueprint[...],
 )
 
@@ -8,7 +8,11 @@ ui <- function(id) {
   ns <- NS(id)
     Navbar(
       NavbarGroup(
-        NavbarHeading("Blueprint"),
+        tagList(
+          Icon(icon = "globe", size = 40),
+        ),
+        NavbarDivider(),
+        NavbarHeading(" Rhino Auth"),
         NavbarDivider(),
         Button(minimal = TRUE, icon = "home", text = "Home"),
         Button(minimal = TRUE, icon = "document", text = "Files")
