@@ -1,13 +1,24 @@
 box::use(
   shiny[bootstrapPage, div, moduleServer, NS, renderUI, tags, uiOutput],
+  shiny.blueprint[...],
 )
 
 #' @export
 ui <- function(id) {
   ns <- NS(id)
-  bootstrapPage(
-    uiOutput(ns("message"))
-  )
+    Navbar(
+      NavbarGroup(
+        NavbarHeading("Blueprint"),
+        NavbarDivider(),
+        Button(minimal = TRUE, icon = "home", text = "Home"),
+        Button(minimal = TRUE, icon = "document", text = "Files")
+      ),
+      NavbarGroup(
+        align = "right",
+        Button(minimal = TRUE, icon = "user"),
+        Button(minimal = TRUE, icon = "refresh")
+      )
+    )
 }
 
 #' @export
