@@ -1,5 +1,5 @@
 box::use(,
-  shiny[bootstrapPage, div, moduleServer, NS, renderUI, tags, uiOutput, tagList,],
+  shiny[bootstrapPage, div, moduleServer, NS, renderUI, tags, uiOutput, tagList, ],
   shiny.blueprint[...],
 )
 
