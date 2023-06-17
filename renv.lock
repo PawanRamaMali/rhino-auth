@@ -139,6 +139,16 @@
         "processx"
       ]
     },
+    "checkmate": {
+      "Package": "checkmate",
+      "Version": "2.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "ca9c113196136f4a9ca9ce6079c2c99e",
+      "Requirements": [
+        "backports"
+      ]
+    },
     "cli": {
       "Package": "cli",
       "Version": "3.4.1",
@@ -670,6 +680,35 @@
         "sourcetools",
         "withr",
         "xtable"
+      ]
+    },
+    "shiny.blueprint": {
+      "Package": "shiny.blueprint",
+      "Version": "0.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c3ef4152f87e8598ab28e825b92bd7cf",
+      "Requirements": [
+        "checkmate",
+        "htmltools",
+        "shiny",
+        "shiny.react"
+      ]
+    },
+    "shiny.react": {
+      "Package": "shiny.react",
+      "Version": "0.3.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "ef9e3966d3cd63ea006296bd7b7d4dcb",
+      "Requirements": [
+        "glue",
+        "htmltools",
+        "jsonlite",
+        "logger",
+        "purrr",
+        "rlang",
+        "shiny"
       ]
     },
     "sourcetools": {
